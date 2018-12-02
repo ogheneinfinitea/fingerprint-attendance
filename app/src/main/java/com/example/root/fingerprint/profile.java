@@ -1,0 +1,66 @@
+package com.example.root.fingerprint;
+
+import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
+public class profile extends AppCompatActivity implements View.OnClickListener{
+    private FirebaseAuth firebaseAuth;
+
+    private TextView textViewUserEmail;
+    private Button buttonLogout;
+    private Button buttonPtest;
+    private Button buttonStudent;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_profile);
+
+        firebaseAuth =FirebaseAuth.getInstance();
+
+        if (firebaseAuth.getCurrentUser() ==null) {
+            finish();
+            startActivity(new Intent(this, login.class));
+        }
+        FirebaseUser user =firebaseAuth.getCurrentUser();
+
+        textViewUserEmail = (TextView) findViewById(R.id.textviewUserEmail);
+        textViewUserEmail.setText("Welcome "+user.getEmail());
+
+        //assiging of buttons
+        buttonLogout =(Button) findViewById(R.id.buttonLogout);
+        buttonPtest = (Button) findViewById(R.id.buttonPtest);
+        buttonStudent = (Button) findViewById(R.id.buttonStudent);
+
+
+
+        buttonLogout.setOnClickListener(this);
+        buttonPtest.setOnClickListener(this);
+        buttonStudent.setOnClickListener(this);
+    }
+
+
+    @Override
+    public  void onClick(View view) {
+       if (view == buttonLogout) {
+           firebaseAuth.signOut();
+           finish();
+           startActivity(new Intent(this, login.class));
+       }
+if(view == buttonPtest) {
+    startActivity(new Intent(this, edtprofile.class));
+}
+        if(view == buttonStudent) {
+            startActivity(new Intent(this, student_reg.class));
+        }
+
+
+    }
+}
