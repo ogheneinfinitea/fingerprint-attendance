@@ -21,7 +21,8 @@
         <activity android:name=".login" />
         <activity android:name=".profile" />
         <activity android:name=".edtprofile" />
-        <activity android:name=".student_reg"></activity>
+        <activity android:name=".student_reg" />
+        <activity android:name=".addcourse"></activity>
     </application>
 
 </manifest>
