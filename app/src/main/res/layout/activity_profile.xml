@@ -45,6 +45,16 @@
             android:textColor="@color/colorWhite"
             />
 
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
         <Button
             android:id="@+id/buttonStudent"
             android:layout_width="match_parent"
@@ -55,9 +65,19 @@
             android:text="STUDENT"
             android:textColor="@color/colorWhite"
             />
+        <Button
+            android:id="@+id/course"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="COURSE"
+            android:textColor="@color/colorWhite"
+            />
+
 
 
     </LinearLayout>
-
 
 </LinearLayout>
