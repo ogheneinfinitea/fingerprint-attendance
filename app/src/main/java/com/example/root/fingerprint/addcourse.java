@@ -3,6 +3,7 @@ package com.example.root.fingerprint;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -26,7 +27,15 @@ public class addcourse extends AppCompatActivity {
 
         edttextcourse_id = (EditText) findViewById(R.id.edttextcourse_id);
         edttextcourse_name = (EditText) findViewById(R.id.edttextcourse_name);
+
         btnSave_Course = (Button) findViewById(R.id.btnSave_Course);
+
+        btnSave_Course.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                edtadd_course();
+            }
+        });
     }
 
 
