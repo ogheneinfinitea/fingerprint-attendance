@@ -17,6 +17,7 @@ public class profile extends AppCompatActivity implements View.OnClickListener{
     private Button buttonLogout;
     private Button buttonPtest;
     private Button buttonStudent;
+    private Button buttoncourse;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,12 +39,14 @@ public class profile extends AppCompatActivity implements View.OnClickListener{
         buttonLogout =(Button) findViewById(R.id.buttonLogout);
         buttonPtest = (Button) findViewById(R.id.buttonPtest);
         buttonStudent = (Button) findViewById(R.id.buttonStudent);
+        buttoncourse = (Button) findViewById(R.id.btncourse);
 
 
 
         buttonLogout.setOnClickListener(this);
         buttonPtest.setOnClickListener(this);
         buttonStudent.setOnClickListener(this);
+        buttoncourse.setOnClickListener(this);
     }
 
 
@@ -59,6 +62,9 @@ if(view == buttonPtest) {
 }
         if(view == buttonStudent) {
             startActivity(new Intent(this, student_reg.class));
+        }
+        if(view == buttoncourse) {
+            startActivity(new Intent(this, addcourse.class));
         }
 
 
