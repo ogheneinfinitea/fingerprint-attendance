@@ -23,7 +23,8 @@
         <activity android:name=".edtprofile" />
         <activity android:name=".student_reg" />
         <activity android:name=".addcourse" />
-        <activity android:name=".attendance"></activity>
+        <activity android:name=".attendance" />
+        <activity android:name=".report"></activity>
     </application>
 
 </manifest>
