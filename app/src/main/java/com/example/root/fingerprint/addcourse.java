@@ -46,7 +46,7 @@ public class addcourse extends AppCompatActivity {
 
         if(!TextUtils.isEmpty(course_id)) {
             String id = databaseCourse.push().getKey();
-            edtadd_course  course = new edtadd_course (id, course_id,course_name);
+            edtadd_course  course = new edtadd_course (id, course_name, course_id);
             databaseCourse.child(id).setValue(course);
             Toast.makeText(this, "Course Added Successfully", Toast.LENGTH_SHORT).show();
         } else{
@@ -54,7 +54,7 @@ public class addcourse extends AppCompatActivity {
 
             if(!TextUtils.isEmpty(course_name)) {
                 String id = databaseCourse.push().getKey();
-                edtadd_course  course = new edtadd_course (id, course_id,course_name);
+                edtadd_course  course = new edtadd_course (id, course_name, course_id);
                 databaseCourse.child(id).setValue(course);
                 Toast.makeText(this, "Course Added Successfully", Toast.LENGTH_SHORT).show();
             } else{
