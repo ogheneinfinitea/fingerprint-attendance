@@ -24,7 +24,8 @@
         <activity android:name=".student_reg" />
         <activity android:name=".addcourse" />
         <activity android:name=".attendance" />
-        <activity android:name=".report"></activity>
+        <activity android:name=".report" />
+        <activity android:name=".list_course"></activity>
     </application>
 
 </manifest>
