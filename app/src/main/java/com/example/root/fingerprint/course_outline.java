@@ -6,14 +6,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class course_outline extends AppCompatActivity {
+public class course_outline extends AppCompatActivity implements View.OnClickListener{
     private Button com401;
     private Button com402;
     private Button com403;
     private Button com404;
     private Button com405;
     private Button com406;
-    private Button com407;
+
 
 
 
@@ -23,7 +23,25 @@ public class course_outline extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_course_outline);
 
+        com401= (Button) findViewById(R.id.btncom401);
+        com402= (Button) findViewById(R.id.btncom402);
+        com403= (Button) findViewById(R.id.btncom403);
+        com404= (Button) findViewById(R.id.btncom404);
+        com405= (Button) findViewById(R.id.btncom405);
+        com406= (Button) findViewById(R.id.btncom406);
+
+
+
         com401.setOnClickListener(this);
+        com402.setOnClickListener(this);
+        com403.setOnClickListener(this);
+        com404.setOnClickListener(this);
+        com405.setOnClickListener(this);
+        com406.setOnClickListener(this);
+
+
+
+
     }
 
     public void  onClick(View view) {
@@ -53,12 +71,6 @@ public class course_outline extends AppCompatActivity {
                             finish();
                             startActivity(new Intent(this, studentcom406.class));
                             //will open login activity here
-                            if (view == com407) {
-                                finish();
-                                startActivity(new Intent(this, studentcom407.class));
-                                //will open login activity here
-
-
-                            }
+                            
                         }
                     }}}}}}
