@@ -25,7 +25,18 @@
         <activity android:name=".addcourse" />
         <activity android:name=".attendance" />
         <activity android:name=".report" />
-        <activity android:name=".list_course"></activity>
+        <activity android:name=".list_course" />
+        <activity android:name=".course_outline" />
+        <activity
+            android:name=".com401"
+            android:label="@string/title_activity_com401"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".com402" />
+        <activity android:name=".com403" />
+        <activity android:name=".com404" />
+        <activity android:name=".com405" />
+        <activity android:name=".com406" />
+        <activity android:name=".com407"></activity>
     </application>
 
 </manifest>

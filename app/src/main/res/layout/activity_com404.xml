@@ -7,50 +7,55 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="10dp"
-    tools:context=".MainActivity">
+    tools:context=".com404">
 
-    <EditText
-        android:id="@+id/edttextEmail"
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:hint="Email"
-        android:padding="10dp"/>
+        android:orientation="horizontal">
 
-    <EditText
-        android:id="@+id/edttextPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:hint="Enter Your Password"
-        android:inputType="textPassword"
-        android:padding="10dp"/>
+    </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btnLogin"
+            android:id="@+id/btncom401"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:layout_weight="1"
-            android:background="@color/colorCyan"
-            android:text="SIGN IN"
+            android:background="@color/colorPrimary"
+            android:text="STUDENTS"
+            android:textColor="@color/colorWhite"
+            />
+
+        <Button
+            android:id="@+id/btncom402"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="ATTENDANCE"
             android:textColor="@color/colorWhite"
             />
 
 
+
+
+
+
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/txtviewsignup"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Click Here to Sign Up"
-        android:textAlignment="center"
 
 
-        />
+
+
+
+
+
 </LinearLayout>
