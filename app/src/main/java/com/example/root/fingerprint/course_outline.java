@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class course_outline extends AppCompatActivity implements View.OnClickListener{
-    private Button com401;
+    private Button com407;
     private Button com402;
     private Button com403;
     private Button com404;
@@ -23,7 +23,7 @@ public class course_outline extends AppCompatActivity implements View.OnClickLis
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_course_outline);
 
-        com401= (Button) findViewById(R.id.btncom401);
+        com407= (Button) findViewById(R.id.btncom407);
         com402= (Button) findViewById(R.id.btncom402);
         com403= (Button) findViewById(R.id.btncom403);
         com404= (Button) findViewById(R.id.btncom404);
@@ -32,7 +32,7 @@ public class course_outline extends AppCompatActivity implements View.OnClickLis
 
 
 
-        com401.setOnClickListener(this);
+        com407.setOnClickListener(this);
         com402.setOnClickListener(this);
         com403.setOnClickListener(this);
         com404.setOnClickListener(this);
@@ -44,33 +44,27 @@ public class course_outline extends AppCompatActivity implements View.OnClickLis
 
     }
 
-    public void  onClick(View view) {
-        if(view == com401){
+    public  void onClick(View view) {
+        if (view == com407) {
 
+            startActivity(new Intent(this, com407.class));
+        }
+        if(view == com402) {
+            startActivity(new Intent(this, com402.class));
+        }
+        if(view == com403) {
+            startActivity(new Intent(this, com403.class));
+        }
+        if(view == com404) {
+            startActivity(new Intent(this, com404.class));
         }
 
-        if (view == com402){
-            finish();
-            startActivity(new Intent(this, studentcom402.class));
-            //will open login activity here
+        if(view == com405) {
+            startActivity(new Intent(this, com405.class));
+        }
+        if(view == com406) {
+            startActivity(new Intent(this, com406.class));
+        }
 
-            if (view == com403){
-                finish();
-                startActivity(new Intent(this, studentcom403.class));
-                //will open login activity here
-
-                if (view == com404){
-                    finish();
-                    startActivity(new Intent(this, studentcom404.class));
-                    //will open login activity here
-                    if (view == com405) {
-                        finish();
-                        startActivity(new Intent(this, studentcom405.class));
-                        //will open login activity here
-                        if (view == com406) {
-                            finish();
-                            startActivity(new Intent(this, studentcom406.class));
-                            //will open login activity here
-                            
-                        }
-                    }}}}}}
+    }
+}

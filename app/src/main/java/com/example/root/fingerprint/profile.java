@@ -43,6 +43,7 @@ public class profile extends AppCompatActivity implements View.OnClickListener{
 
 
 
+
         buttonLogout.setOnClickListener(this);
         buttonPtest.setOnClickListener(this);
         buttonStudent.setOnClickListener(this);
@@ -64,7 +65,7 @@ if(view == buttonPtest) {
             startActivity(new Intent(this, student_reg.class));
         }
         if(view == buttoncourse) {
-            startActivity(new Intent(this, addcourse.class));
+            startActivity(new Intent(this, course_outline.class));
         }
 
 

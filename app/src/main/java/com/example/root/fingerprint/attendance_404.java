@@ -3,11 +3,11 @@ package com.example.root.fingerprint;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class com406 extends AppCompatActivity {
+public class attendance_404 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_com406);
+        setContentView(R.layout.activity_attendance_404);
     }
 }

@@ -7,38 +7,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="10dp"
-    tools:context=".studentcom401">
+    tools:context=".attendance_402">
 
     <EditText
         android:id="@+id/edttextid"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:hint="Enter Your ID"
-        android:padding="10dp"/>
-
-    <EditText
-        android:id="@+id/edttextName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:hint=" Enter Your Name"
-        android:padding="10dp"/>
-
-
-    <EditText
-        android:id="@+id/edttextPhone"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:hint=" Enter Your Phone Number"
-        android:padding="10dp"/>
-    <EditText
-        android:id="@+id/edttextAddress"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:hint="Enter Your Address"
+        android:hint="ID"
         android:padding="10dp"/>
 
 
@@ -48,22 +24,18 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btnSave"
+            android:id="@+id/btnSign_attendance"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:background="@color/colorCyan"
-            android:text="SAVE"
+            android:text="SIGN ATTENDANCE"
             android:textColor="@color/colorWhite"
             />
 
 
-
     </LinearLayout>
-
-
-
 
 
 </LinearLayout>
