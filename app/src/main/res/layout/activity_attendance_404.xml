@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="10dp"
-    tools:context=".attendance_402">
+    tools:context=".attendance_404">
 
     <EditText
         android:id="@+id/edttextid"

@@ -18,16 +18,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/btncom407"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_weight="1"
-            android:background="@color/colorPrimary"
-            android:text="COM 401"
-            android:textColor="@color/colorWhite"
-            />
+
 
         <Button
             android:id="@+id/btncom402"
@@ -97,16 +88,6 @@
             android:textColor="@color/colorWhite"
             />
 
-        <Button
-            android:id="@+id/btncom406"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_weight="1"
-            android:background="@color/colorPrimary"
-            android:text="COM 406"
-            android:textColor="@color/colorWhite"
-            />
 
 
 

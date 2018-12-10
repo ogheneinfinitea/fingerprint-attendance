@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class studentcom404 extends AppCompatActivity implements View.OnClickListener {
-    private Button btncom402s;
+    private Button btncom404s;
 
 
     @Override
@@ -15,14 +15,14 @@ public class studentcom404 extends AppCompatActivity implements View.OnClickList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_studentcom404);
 
-        btncom402s = (Button) findViewById(R.id.btncom404s);
+        btncom404s = (Button) findViewById(R.id.btncom402s);
 
 
-        btncom402s.setOnClickListener(this);
+        btncom404s.setOnClickListener(this);
     }
 
     public void onClick (View view){
-        if (view == btncom402s) {
+        if (view == btncom404s) {
 
             startActivity(new Intent(this, com404.class));
         }

@@ -23,7 +23,7 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btncom403s"
+            android:id="@+id/com_403s"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -34,7 +34,7 @@
             />
 
         <Button
-            android:id="@+id/btncom403a"
+            android:id="@+id/com_403a"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"

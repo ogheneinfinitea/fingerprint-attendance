@@ -8,8 +8,8 @@ import android.widget.Button;
 
 
 public class com402 extends AppCompatActivity implements View.OnClickListener  {
-    private  Button com_407s;
-    private  Button com_407a;
+    private  Button com_402s;
+    private  Button com_402a;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,22 +17,22 @@ public class com402 extends AppCompatActivity implements View.OnClickListener  {
         setContentView(R.layout.activity_com402);
 
 
-        com_407s = (Button) findViewById(R.id.btncom402s);
-        com_407a = (Button) findViewById(R.id.btncom402s);
+        com_402s = (Button) findViewById(R.id.btncom402s);
+        com_402a = (Button) findViewById(R.id.btncom402a);
 
 
-        com_407s.setOnClickListener(this);
-        com_407a.setOnClickListener(this);
+        com_402s.setOnClickListener(this);
+        com_402a.setOnClickListener(this);
 
     }
 
     public void onClick (View view){
-        if (view == com_407s ) {
+        if (view == com_402s ) {
 
             startActivity(new Intent(this, studentcom402.class));
         }
 
-        if (view == com_407a ) {
+        if (view == com_402a ) {
 
             startActivity(new Intent(this, attendance_402.class));
         }

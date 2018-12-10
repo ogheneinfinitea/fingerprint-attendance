@@ -18,8 +18,7 @@ public class com403 extends AppCompatActivity implements View.OnClickListener  {
 
 
         com_403s = (Button) findViewById(R.id.com_403s);
-        com_403a= (Button) findViewById(R.id.com_403a);
-
+        com_403a = (Button) findViewById(R.id.com_403a);
 
 
         com_403s.setOnClickListener(this);
@@ -30,12 +29,12 @@ public class com403 extends AppCompatActivity implements View.OnClickListener  {
     public void onClick (View view){
         if (view == com_403s ) {
 
-            startActivity(new Intent(this, studentcom407.class));
+            startActivity(new Intent(this, studentcom403.class));
         }
 
         if (view == com_403a ) {
 
-            startActivity(new Intent(this, attendance_407.class));
+            startActivity(new Intent(this, attendance_403.class));
         }
     }
 }
