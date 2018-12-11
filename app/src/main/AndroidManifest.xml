@@ -20,23 +20,15 @@
         </activity>
         <activity android:name=".login" />
         <activity android:name=".profile" />
-        <activity android:name=".edtprofile" />
-        <activity android:name=".student_reg" />
-        <activity android:name=".addcourse" />
-        <activity android:name=".attendance" />
-        <activity android:name=".report" />
         <activity android:name=".course_outline" />
         <activity android:name=".com402" />
         <activity android:name=".com403" />
-        <activity android:name=".com404" />
         <activity android:name=".com405" />
         <activity android:name=".studentcom402" />
         <activity android:name=".studentcom403" />
-        <activity android:name=".studentcom404" />
         <activity android:name=".studentcom405" />
         <activity android:name=".attendance_402" />
         <activity android:name=".attendance_403" />
-        <activity android:name=".attendance_404" />
         <activity android:name=".attendance_405" />
     </application>
 

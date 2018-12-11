@@ -5,14 +5,14 @@ String id;
 String name;
 String address;
 String phone;
-String course;
 
-    public addedtprofile(String id, String name, String address, String phone, String course) {
+
+    public addedtprofile(String id, String name, String address, String phone) {
         this.id = id;
         this.name = name;
         this.address = address;
         this.phone = phone;
-        this.course = course;
+
     }
 
     public String getId() {
@@ -47,11 +47,5 @@ String course;
         this.phone = phone;
     }
 
-    public String getCourse() {
-        return course;
-    }
 
-    public void setCourse(String course) {
-        this.course = course;
-    }
 }

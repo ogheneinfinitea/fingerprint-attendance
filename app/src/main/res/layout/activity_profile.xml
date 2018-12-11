@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="10dp"
-    tools:context=".MainActivity">
+    tools:context=".profile">
 
     <TextView
         android:id="@+id/textviewUserEmail"
@@ -55,16 +55,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/buttonStudent"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_weight="1"
-            android:background="@color/colorPrimary"
-            android:text="STUDENT"
-            android:textColor="@color/colorWhite"
-            />
+
         <Button
             android:id="@+id/btncourse"
             android:layout_width="match_parent"

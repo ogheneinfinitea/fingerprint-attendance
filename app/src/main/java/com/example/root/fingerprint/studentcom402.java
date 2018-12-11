@@ -14,10 +14,10 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class studentcom402 extends AppCompatActivity  {
     private Button btncom402s;
-    EditText edttextid;
-    EditText edttextName;
-    EditText edttextPhone;
-    EditText edttextAddress;
+    private EditText edttextid;
+    private EditText edttextName;
+    private     EditText edttextPhone;
+    private  EditText edttextAddress;
 
 
     DatabaseReference databasecom402;
@@ -28,6 +28,12 @@ public class studentcom402 extends AppCompatActivity  {
         setContentView(R.layout.activity_studentcom402);
         databasecom402= FirebaseDatabase.getInstance().getReference("com402");
         btncom402s = (Button) findViewById(R.id.btncom402s);
+        edttextid = (EditText) findViewById(R.id.edttextid);
+        edttextName =(EditText) findViewById(R.id.edttextName);
+        edttextPhone =(EditText) findViewById(R.id.edttextPhone);
+        edttextPhone =(EditText) findViewById(R.id.edttextPhone);
+        edttextAddress =(EditText) findViewById(R.id.edttextAddress);
+
 
 
 
@@ -40,15 +46,11 @@ public class studentcom402 extends AppCompatActivity  {
         });
         }
 
-    private void add_com402()
-    {
-        String student_id = edttextid.getText().toString().trim();
-        String student_name = edttextName.getText().toString().trim();
-        String student_address = edttextAddress.getText().toString().trim();
-        String student_phone = edttextPhone.getText().toString().trim();
-
-
-
+    private void add_com402() {
+      String student_id = edttextid.getText().toString().trim();
+      String student_name = edttextName.getText().toString().trim();
+      String student_address = edttextAddress.getText().toString().trim();
+      String student_phone = edttextPhone.getText().toString().trim();
         if(!TextUtils.isEmpty(student_id)) {
             String id = databasecom402.push().getKey();
             getstudent_402  com402 = new getstudent_402 (student_id, student_name, student_address,student_phone);
@@ -67,22 +69,22 @@ public class studentcom402 extends AppCompatActivity  {
 
 
 
-        if(!TextUtils.isEmpty(student_phone)) {
-            String id = databasecom402.push().getKey();
-            getstudent_402  com402 = new getstudent_402 (student_id, student_name, student_address,student_phone);
-            databasecom402.child(id).setValue(com402);
-            Toast.makeText(this, "Student  Added Successfully", Toast.LENGTH_SHORT).show();
-        } else {
-            Toast.makeText(this, "You Should enter the student phone", Toast.LENGTH_SHORT).show();
+                if(!TextUtils.isEmpty(student_phone)) {
+                    String id = databasecom402.push().getKey();
+                    getstudent_402  com402 = new getstudent_402 (student_id, student_name, student_address,student_phone);
+                    databasecom402.child(id).setValue(com402);
+                    Toast.makeText(this, "Student  Added Successfully", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(this, "You Should enter the student phone", Toast.LENGTH_SHORT).show();
 
-            if (!TextUtils.isEmpty(student_address)) {
-                String id = databasecom402.push().getKey();
-                getstudent_402  com402 = new getstudent_402 (student_id, student_name, student_address,student_phone);
-                databasecom402.child(id).setValue(com402);
-                Toast.makeText(this, "Student  Added Successfully", Toast.LENGTH_SHORT).show();
-            } else {
-                Toast.makeText(this, "You Should enter the Student Address", Toast.LENGTH_SHORT).show();
-            }
+                    if (!TextUtils.isEmpty(student_address)) {
+                        String id = databasecom402.push().getKey();
+                        getstudent_402  com402 = new getstudent_402 (student_id, student_name, student_address,student_phone);
+                        databasecom402.child(id).setValue(com402);
+                        Toast.makeText(this, "Student  Added Successfully", Toast.LENGTH_SHORT).show();
+                    } else {
+                        Toast.makeText(this, "You Should enter the Student Address", Toast.LENGTH_SHORT).show();
+                    }
 
-        }}}}}
+                }}}}}
 

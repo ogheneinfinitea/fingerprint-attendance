@@ -30,10 +30,19 @@
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:background="@color/colorCyan"
-            android:text="SIGN ATTENDANCE"
+            android:text="SIGN IN"
             android:textColor="@color/colorWhite"
             />
-
+        <Button
+            android:id="@+id/edttextgetid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/colorCyan"
+            android:text="GET ID"
+            android:textColor="@color/colorWhite"
+            />
 
     </LinearLayout>
 

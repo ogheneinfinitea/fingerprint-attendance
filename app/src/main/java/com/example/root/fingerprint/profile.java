@@ -16,7 +16,6 @@ public class profile extends AppCompatActivity implements View.OnClickListener{
     private TextView textViewUserEmail;
     private Button buttonLogout;
     private Button buttonPtest;
-    private Button buttonStudent;
     private Button buttoncourse;
 
     @Override
@@ -38,7 +37,6 @@ public class profile extends AppCompatActivity implements View.OnClickListener{
         //assiging of buttons
         buttonLogout =(Button) findViewById(R.id.buttonLogout);
         buttonPtest = (Button) findViewById(R.id.buttonPtest);
-        buttonStudent = (Button) findViewById(R.id.buttonStudent);
         buttoncourse = (Button) findViewById(R.id.btncourse);
 
 
@@ -46,7 +44,6 @@ public class profile extends AppCompatActivity implements View.OnClickListener{
 
         buttonLogout.setOnClickListener(this);
         buttonPtest.setOnClickListener(this);
-        buttonStudent.setOnClickListener(this);
         buttoncourse.setOnClickListener(this);
     }
 
@@ -59,11 +56,10 @@ public class profile extends AppCompatActivity implements View.OnClickListener{
            startActivity(new Intent(this, login.class));
        }
 if(view == buttonPtest) {
-    startActivity(new Intent(this, edtprofile.class));
+           startActivity(new Intent(this, profile.class));
+
 }
-        if(view == buttonStudent) {
-            startActivity(new Intent(this, student_reg.class));
-        }
+
         if(view == buttoncourse) {
             startActivity(new Intent(this, course_outline.class));
         }
