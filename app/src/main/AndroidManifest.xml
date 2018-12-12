@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -30,6 +31,7 @@
         <activity android:name=".attendance_402" />
         <activity android:name=".attendance_403" />
         <activity android:name=".attendance_405" />
+        <activity android:name=".lecturer"></activity>
     </application>
 
 </manifest>

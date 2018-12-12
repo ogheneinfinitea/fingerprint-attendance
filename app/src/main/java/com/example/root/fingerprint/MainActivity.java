@@ -59,6 +59,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
 
         if(TextUtils.isEmpty(email)){
             //email is empty
+            //helps to pop up messages to the screen
             Toast.makeText(this, "Please Enter Email", Toast.LENGTH_SHORT) .show();
             //Stopping the function from further execution
             return;
@@ -72,7 +73,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
 
         }
         //if validations are ok
-        //we will first show Progessbar
+
 
 
         progressDialog.setMessage("Registering User...");
@@ -83,14 +84,14 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()){
                             finish();
-                                //profile activity here
+                                //display the profile activity here
                                 startActivity(new Intent(getApplicationContext(), profile.class));
 
 
 
                             //user is successfully registered and logged in
                            //we will start the profile activity here
-                            //right now lets Display a toast only
+
                             Toast.makeText(MainActivity.this, "Registered Successfully", Toast.LENGTH_SHORT).show();
                         }else {
                             Toast.makeText(MainActivity.this, "Registration failed", Toast.LENGTH_SHORT);

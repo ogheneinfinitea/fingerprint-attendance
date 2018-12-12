@@ -56,7 +56,7 @@ public class profile extends AppCompatActivity implements View.OnClickListener{
            startActivity(new Intent(this, login.class));
        }
 if(view == buttonPtest) {
-           startActivity(new Intent(this, profile.class));
+           startActivity(new Intent(this, lecturer.class));
 
 }
 
